@@ -53,10 +53,10 @@ def is_missing_char(original_word, answer_word, char):
 # TODO: Step 1 - fill in missing char in word and return new more complete word
 def fill_in_char(original_word, answer_word, char):
     answer_word = list(answer_word)
-    list_word = list(answer_word) #broke word into a list
-    index_char = original_word.find(char)#found index of char given by user
+    list_word = list(answer_word) 
+    index_char = original_word.find(char)
     if  char in original_word:
-        list_word[index_char] = char #assigning the value of the char to the underscore of it's index (the char is from the user)
+        list_word[index_char] = char 
     more_complete_word = "".join(list_word)
     return more_complete_word
 
@@ -64,7 +64,7 @@ def fill_in_char(original_word, answer_word, char):
 def do_correct_answer(original_word, answer, guess):
     answer = fill_in_char(original_word, answer, guess)
     print(answer)
-    return answer #answer is print out of word with users input
+    return answer 
 
 
 # TODO: Step 4: update to use number of remaining guesses
